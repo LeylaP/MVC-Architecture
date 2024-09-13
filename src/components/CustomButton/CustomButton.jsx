@@ -1,20 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
-export const buttonTypes = {
-  PRYMARY_SMALL: {
-    backgroundColor: '#2D65E6',
-    paddingHorizontal: 8,
-    width: 120,
-    height: 28,
-    borderRadius: 8,
-    color: '#FFFFFF',
-    fontSize: 12,
-    fontSize: '600',
-    paddingVertica: 3,
-  },
-};
-
 const CustomButton = ({buttonTitle, onPress, buttonType}) => {
   const styles = StyleSheet.create({
     buttonContainer: {
@@ -35,7 +21,7 @@ const CustomButton = ({buttonTitle, onPress, buttonType}) => {
   });
 
   return (
-    <TouchableOpacity style={styles.buttonContainer}>
+    <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
       <Text style={styles.buttonTitle}>Gönderi Ekle</Text>
     </TouchableOpacity>
   );
