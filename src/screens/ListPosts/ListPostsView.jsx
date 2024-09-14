@@ -1,5 +1,7 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
+import Title from '../../components/Title/Title';
+import {titleTypes} from '../../components/Title/TitleTypes';
 
 const ListPostsView = ({postData}) => {
   return (
@@ -10,8 +12,14 @@ const ListPostsView = ({postData}) => {
         renderItem={({item}) => (
           <View style={styles.post}>
             <View style={styles.info}>
-              <Text style={styles.title}>{item.title}</Text>
-              <Text style={styles.name}>{item.user}</Text>
+              <Title
+                titleType={titleTypes.TITLE_WHİTE_20_800}
+                title={item.title}
+              />
+              <Title
+                title={item.user}
+                titleType={titleTypes.TITLE_GOLD_15_800}
+              />
             </View>
             <Text style={styles.text}>{item.text}</Text>
           </View>
@@ -35,18 +43,9 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     alignItems: 'center',
   },
-  title: {
-    color: '#FFFFFF',
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
+
   text: {
     color: 'gray',
-    fontSize: 15,
-    fontWeight: '800',
-  },
-  name: {
-    color: 'gold',
     fontSize: 15,
     fontWeight: '800',
   },

@@ -9,5 +9,7 @@ export const buttonTypes = {
     color: '#FFFFFF',
     fontSize: 12,
     fontSize: '600',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 };

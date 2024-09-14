@@ -22,7 +22,7 @@ const CustomButton = ({buttonTitle, onPress, buttonType}) => {
 
   return (
     <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
-      <Text style={styles.buttonTitle}>Gönderi Ekle</Text>
+      <Text style={styles.buttonTitle}>{buttonTitle}</Text>
     </TouchableOpacity>
   );
 };

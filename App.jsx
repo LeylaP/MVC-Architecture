@@ -3,9 +3,10 @@ import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import AppStackNavigator from './src/navigations/AppStackNavigator';
 import AppBar from './src/components/AppBar';
+import 'react-native-get-random-values';
 
 export default function App() {
-  const [activePage, setActivePage] = useState('Gönderiler');
+  const [activePage, setActivePage] = React.useState('Gönderiler');
 
   return (
     <SafeAreaView style={{flex: 1}}>

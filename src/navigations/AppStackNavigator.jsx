@@ -7,17 +7,9 @@ const AppStackNavigator = () => {
   const AppStack = createNativeStackNavigator();
 
   return (
-    <AppStack.Navigator initialRouteName="AddPost">
-      <AppStack.Screen
-        name="AddPost"
-        component={AddPostController}
-        options={{headerShown: false}}
-      />
-      <AppStack.Screen
-        name="ListPosts"
-        component={ListPostsController}
-        options={{headerShown: false}}
-      />
+    <AppStack.Navigator screenOptions={{headerShown: false}}>
+      <AppStack.Screen name="ListPosts" component={ListPostsController} />
+      <AppStack.Screen name="AddPost" component={AddPostController} />
     </AppStack.Navigator>
   );
 };
