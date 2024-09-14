@@ -27,3 +27,6 @@ API Requests: Handled using Axios for clean and efficient HTTP requests.
 </ul>
 <br>
 <h3>Screenshots</h3>
+![MVC Image 1](https://github.com/LeylaP/MVC-Architecture/blob/main/src/assets/Form1.png)
+![MVC Image 2](https://github.com/LeylaP/MVC-Architecture/blob/main/src/assets/Form2.png)
+
